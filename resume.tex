@@ -1,0 +1,126 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+\documentclass[a4paper,12pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.90}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+% \addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+% \addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+% \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\resheading}[1]{{\large {\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.3in}{l@{\extracolsep{\fill}}r}
+		
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\projectsubheading}[2]{
+\begin{tabular*}{6.3in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textit{#2} \\
+		% \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+\begin{document}
+
+\begin{tabular*}{6.7in}{l@{\extracolsep{\fill}}r}
+\textbf{\large GONG Li}  & +65 86206648 \\
+BLK 26 \#1-500B, 10 Nanyang Drive &  lgong3@e.ntu.edu.sg \\
+Singapore 637720 & https://github.com/wihoho\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{Nanyang Technological University}{Singapore}{B.Eng (Hons) in Computer Engineering}{Sep 2010 - May 2014}
+	\begin{itemize}
+		\resitem {Current GPA \textbf{4.64} on a scale of 5.0}
+		\resitem {Awarded the MOE-GLC PRC Undergraduate \textbf{Scholarship} provided by MOE}
+		\resitem {Invited to join the \textbf{ELITE+} program by Infocomm Development Authority}
+	\end{itemize}
+\end{itemize} 
+
+\resheading{Working Experience}
+\begin{itemize}
+\item
+	\ressubheading{IBM Research Collaboratory}{Singapore}{Summer Research Intern}{May 2013 - July 2013}
+	\begin{itemize}
+		\resitem {Explored solutions to encourage employees' productivity on IBM Connections} 
+		\resitem {Designed a MySQL database to store data of IBM Connections from scratch}
+		\resitem {Implemented three different algorithms in Python to perform summarization tasks}
+		\resitem {Conducted Singapore food analysis based on social data for advertising campaign}
+	\end{itemize}
+\end{itemize}
+
+\resheading {School Projects}
+\begin{itemize}
+\item
+	\projectsubheading {Final Year Project, Visual Event Recognition in Videos}{Feb 2013 - Dec 2013}
+	\begin{itemize}
+		\resitem {Researched and implemented a framework to recognize different images and videos}
+		\resitem {Explored and compared \textbf{cutting-edge} approaches including Feature Replication, Adaptive SVM, Multiple Kernel Learning and Adaptive MKL}
+		\resitem {Incorporated Near Duplication Detection into this framework \textbf{creatively}}
+
+	\end{itemize}
+
+\item
+	\projectsubheading {CPE433 Machine Learning, Face Recognition Project}{Mar 2013}
+	\begin{itemize}
+		\resitem {Developed a face recognition system in Java based on machine learning knowledge}
+		\resitem {Implemented three different methods: eigenfaces, fishfaces and laplacianfaces}
+		\resitem {Designed from object-oriented view with adapter and factory pattern involved}
+		\resitem {\textbf{Led} a group of three to achieve this project with high quality in only 20 days}
+	\end{itemize}
+\item
+	\projectsubheading {Undergraduate Research Experience on Campus} {Oct 2011 - May 2012}
+
+	\begin{itemize}
+		\resitem {Developed an android mobile application with cloud assisted independently}
+		\resitem {Adopted XMPP as the chatting protocol and Youtube as the content source}
+		\resitem {Awarded as NTU President \textbf{Research Scholar} for this accomplishment}
+		\resitem{ Research paper is included in the ``Proceedings of the URECA@NTU 2011-12''}
+	\end{itemize}
+\item
+	\projectsubheading {CPE279 Design and Development Project}{Feb 2012 - May 2012}
+
+	\begin{itemize}
+		\resitem {Developed software in Java and C controlling a robot's moving in a random maze}
+		\resitem {Implemented graph algorithms including DFS, BFS, Dijkstra's algorithm and TSP}
+		\resitem {\textbf{Led} a group of six with good plan, proper inspiration and complete commitment}
+		\resitem {Among the only 3 teams out of 13 which had successfully met all the requirements}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Skills}
+\begin{description}
+\item{\bf Technique Skills: }Java, Python, C, C++, SQL, OOP, UML, Design Patterns, Web Design
+
+\item{\bf Languages: }Fluent in written and spoken English and Chinese
+\end{description}
+\end{document}
